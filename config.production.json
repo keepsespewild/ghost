@@ -14,15 +14,13 @@
       "database": "DATABASE_NAME"
     }
   },
-  "mail": {
-    "transport": "Direct"
-  },
   "logging": {
-    "transports": [
-      "stdout"
-    ]
+    "transports": ["stdout"]
   },
   "paths": {
     "contentPath": "/var/lib/ghost/content"
+  },
+  "mail": {
+    "from": "'Keep Sespe Wild' <peter@sespewild.org>"
   }
 }
