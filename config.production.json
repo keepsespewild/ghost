@@ -7,11 +7,11 @@
   "database": {
     "client": "mysql",
     "connection": {
-      "host": "mysql-db",
+      "host": "database__connection__host",
       "port": 3306,
-      "user": "admin",
-      "password": "DATABASE_PASSWORD",
-      "database": "DATABASE_NAME"
+      "user": "database__connection__user",
+      "password": "database__connection__password",
+      "database": "database__connection__database"
     }
   },
   "logging": {
@@ -21,6 +21,14 @@
     "contentPath": "/var/lib/ghost/content"
   },
   "mail": {
+    "transport": "mail__transport",
+    "options": {
+      "service": "mail__options__service",
+      "auth": {
+        "user": "mail__options__auth__user",
+        "pass": "mail__options__auth__pass"
+      }
+    },
     "from": "'Keep Sespe Wild' <peter@sespewild.org>"
   }
 }
