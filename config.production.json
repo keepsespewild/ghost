@@ -28,7 +28,6 @@
         "user": "mail__options__auth__user",
         "pass": "mail__options__auth__pass"
       }
-    },
-    "from": "'Keep Sespe Wild' <peter@sespewild.org>"
+    }
   }
 }
