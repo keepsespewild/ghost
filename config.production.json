@@ -19,5 +19,18 @@
   },
   "paths": {
     "contentPath": "/var/lib/ghost/content"
+  },
+  "mail": {
+    "transport": "mail__transport",
+    "options": {
+      "service": "mail__options__service",
+      "host": "smtp.mailgun.org",
+      "port": 465,
+      "secure": true,
+      "auth": {
+        "user": "mail__options__auth__user",
+        "pass": "mail__options__auth__pass"
+      }
+    }
   }
 }
